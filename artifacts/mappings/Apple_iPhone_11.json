@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/getdevice",
+    "formParameters": {
+      "brand": {
+        "equalTo": "Apple"
+      },
+      "device": {
+        "equalTo": "Apple iPhone 11"
+      }
+    }
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": [{
+      "DeviceName": "Apple iPhone 11",
+      "Brand":  "Apple",
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+      "_2g_bands": "2GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM) - for China",
+      "_3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "_4g_bands": "1, 2, 3, 4, 5, 7, 8, 11, 12, 13, 17, 18, 19, 20, 21, 25, 26, 28, 29, 30, 32, 34, 38, 39, 40, 41, 42, 46, 48, 66 - A2221"
+    }],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/getdevice",
+    "formParameters": {
+      "brand": {
+        "equalTo": "Oneplus"
+      },
+      "device": {
+        "equalTo": "Oneplus 9"
+      }
+    }
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": [{
+      "DeviceName": "Oneplus 9",
+      "Brand":  "Oneplus",
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "_2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "_3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "_4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - EU"
+    }],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

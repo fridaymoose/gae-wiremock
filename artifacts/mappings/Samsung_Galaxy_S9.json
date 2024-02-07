@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/getdevice",
+    "formParameters": {
+      "brand": {
+        "equalTo": "Samsung"
+      },
+      "device": {
+        "equalTo": "Samsung Galaxy S9"
+      }
+    }
+  },
+
+  "response": {
+    "status": 200,
+    "jsonBody": [{
+      "DeviceName": "Samsung Galaxy S9",
+      "Brand":  "Samsung",
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+      "_2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "_3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - Global, USA",
+      "_4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 32, 38, 39, 40, 41, 66 - Global"
+    }],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
